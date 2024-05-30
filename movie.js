@@ -14,17 +14,17 @@ const div_new = document.createElement('div');
 div_new.innerHTML = `
     <div class="row">
         <div class="column">
-        <div class="card_review">
-            New Review
-            <p><strong>Review: </strong>
-                <input type="text" id="new_review" value="">
-            </p>
-            <p><strong>User: </strong>
-                <input type="text" id="new_user" value="">
-            </p>
-            <p><a href="#" onclick="saveReview('new_review', 'new_user')">💾</a>
-            </p>
-        </div>
+          <div class="card">
+              New Review
+              <p><strong>Review: </strong>
+                  <input type="text" id="new_review" value="">
+              </p>
+              <p><strong>User: </strong>
+                  <input type="text" id="new_user" value="">
+              </p>
+              <p><a href="#" onclick="saveReview('new_review', 'new_user')">💾</a>
+              </p>
+          </div>
         </div>
     </div>`
 main.appendChild(div_new)
@@ -38,7 +38,7 @@ function returnReviews(url){
             div_card.innerHTML = `
                 <div class="row">
                     <div class="column">
-                        <div class="card_review" id="${review._id}">
+                        <div class="card" id="${review._id}">
                             <p><strong>Review: </strong>${review.review}</p>
                             <p><strong>User: </strong>${review.user}</p>
                             <p><a href="#" onclick="editReview('${review._id}','${review.review}', '${review.user}')">✏️</a> <a href="#" onclick="deleteReview('${review._id}')">🗑</a></p>

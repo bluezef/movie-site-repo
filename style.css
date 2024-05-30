@@ -38,7 +38,7 @@
     align-items: center;
   }
   
-  input {
+  #query {
     font: 15px system-ui;
     color: black;
     height: 100%;
@@ -70,5 +70,5 @@
     padding: 15px;
     text-align: center;
     background-color: #151f30;
-    height:75px;
+    height:60px;
   }
